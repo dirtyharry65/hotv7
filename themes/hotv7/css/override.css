@@ -1,0 +1,29 @@
+:root {
+  --primary-color: red  ;
+  --primary-color-2:purple;
+  --secondary-color: purple; 
+  --btn-color:white; 
+  --tertiairy-color: #6cbfd6; 
+  --tertiairy-color-hover: #0a5d98; 
+  --main-padding: 10px; 
+  --shadow : 0 0 5px rgba(0,0,0,0.2);
+}
+.login__window {
+  background-image: url('http://api2.house-of-training.nl/demo/wp-content/uploads/sites/8/2019/05/intro.jpg');
+  background-size: cover;
+}
+/* Navigatie */
+.nav-logo{
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 20px;
+}
+.logo-image {
+  content:url("http://imgur.com/SZ8Cm.jpg");
+  width: 4rem;
+  margin:  .75rem 0;
+  display : inline-block; 
+  left : 10%;
+} 
