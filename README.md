@@ -1,12 +1,9 @@
 # hotv7
+wp-content inhoud van de API's
+API3 is huidige thema voor de Root( beheer)
+HOTv7 is huidige Thema voor alle Scholen.
+De Plugins zijn behalve de groups en user-progress niet relevant
+
 ## Available Scripts
 
 In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
