@@ -65,7 +65,7 @@ class HOT_GROUPS_Controller extends WP_REST_Controller {
   }
 /**
  * 
- *  Get Groups by UserID
+ *  Get Groups by ID
  */
 public function get_HOT_user_groups_by_id( $request ) {
 		$id=  intval( $request['id'] );
