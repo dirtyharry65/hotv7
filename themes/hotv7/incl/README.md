@@ -50,4 +50,72 @@ required parameters:
 ## NOTE: ##
 
 **remove from group and delete group is not implemented: this is done in WP-admin**
+## PROGRESS-CONTROLLER.PHP ##
+GET /user/{userID} -> **get_user_progress_by_id**: gets the users  progress  
+required parameters:   
+**id** { user_id }  
+**limit** 100  
+**offset** 0  
+**(direction)** { ASC / DESC }  
+**(sortby)** { 'last_viewed' }  
 
+*returns*:  
+**'success'** => true,  
+**'id'** =>id,  
+**'limit'** => 100  
+**'offset'** => 0  
+**'total'** => total  
+**'data'** => Object [  
+  >**'video_id'** =>video_id,  
+**'course_id'** =>course_id,  
+**'videoTitle'** =>videoTitle,  
+**'user_id'** => id  
+**'last_viewed'** => date  
+**'startdate'** => date  
+**'views'** => 1  
+**'perc_viewed'** => 0  
+**'meta'** => meta  
+  
+] **// end of object**  
+**'trophies'** => trophies  
+
+ 
+ GET /course/{userID} -> **get_user_progress_by_course**: gets the users progress per course  
+
+*returns*:  
+**'success'** => true,  
+**'id'** =>id,  
+**'courseid'** =>course_id,  
+**'limit'** => 100  
+**'offset'** => 0  
+**'total'** => total  
+**'data'** => data  
+**'trophies'** => trophies  
+
+POST /{id} -> **create_progress** : register the progress of user  
+
+required parameters:  
+**id** { id }  
+**videoTitle**{ text},  
+**video_id** { text},  
+**course_id** { text},  
+**perc_viewed** { text},  
+**meta** { json},  
+**update** { boolean },  
+
+
+*returns*:  
+**'success'** => true,  
+**'data'** => Object, [  
+**('update')** => boolean // only if update is set  
+>**'video_id'** =>video_id,  
+**'course_id'** =>course_id,  
+**'videoTitle'** =>videoTitle,  
+**'user_id'** => id  
+**'last_viewed'** => date  
+**'startdate'** => date  
+**'views'** => 1  
+**'perc_viewed'** => 0  
+**'meta'** => meta  
+
+] **// end of data object**
