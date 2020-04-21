@@ -1,7 +1,8 @@
 # REST API  
 Alle {naam}-controller.php zijn REST, alle andere bestanden zijn legacy en worden verwijdered in volgende versie.
 ## groups-controller.php  
-
+*Deze beheert de groepen ( klassen ). Alle studenten zitten in een klas, naar aanleiding van deze klas kunnen zij bepaalde cursussen bekijken.
+Studenten kunnen maar in 1 klas zitten. Docenten kunnen in meerdere klassen zitten.* 
 ### routes:
 GET / **-> get_groups**: get all groups from school  
 *returns*:  
@@ -50,7 +51,9 @@ required parameters:
 ## NOTE: ##
 
 **remove from group and delete group is not implemented: this is done in WP-admin**
-## PROGRESS-CONTROLLER.PHP ##
+## PROGRESS-CONTROLLER.PHP ##  
+*Deze beheert de voortgang van de studenten en docenten. In de meta staat in json de handelingen die de student heeft gehad met de player.*
+
 GET /user/{userID} -> **get_user_progress_by_id**: gets the users  progress  
 required parameters:   
 **id** { user_id }  

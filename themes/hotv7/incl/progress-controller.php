@@ -179,8 +179,13 @@ function get_user_progress_by_course( $request ) {
         'data' => $list,
         'trophies' => $trophies
     ];
-    return $obj;
-  } 
+  } else {
+    $obj =[
+        'error' => true,
+        'message' => 'CourseID not set, could not resolve data',
+    ];
+  }
+  return $obj;
 }
 /**
 * Update or Create progress.
