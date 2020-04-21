@@ -174,8 +174,7 @@ class HOT_COURSES_CONTROLLER extends WP_REST_Controller {
 
 
 /**
-* Get the user progress.
-*
+* *
 * @since 1.0.0
 *
 * @param WP_REST_Request $request Full details about the request.
